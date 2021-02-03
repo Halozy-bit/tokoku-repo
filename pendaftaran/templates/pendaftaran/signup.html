@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'pendaftaran/css/style.css' %}" type="text/css">
+
+{% if user.is_authenticated %}
+  <meta http-equiv="refresh" content="0; url={% url 'list' %}">
+{% else %}
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card shadow-lg" id="cardlg">
+        <div class="card-header">
+          SIGN UP
+        </div>
+        <div class="card-body">
+            {% for message in messages %}
+                {% if message %}
+                    <div class="alert alert-success">{{ message }}</div>
+                {% endif %}
+            {% endfor %}
+          <form action="{% url 'signup' %}" method="post">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+
+            <button class="btn btn-dark">Daftar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'daftar_barang/css/style.css' %}" type="text/css">
+
+<div class="container">
+    <div class="row mt-3 justify-content-center">
+        <div class="col-md-8">
+            <h1 class="text-center">Cari Barang</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Nama barang...." id="search-input">
+                <div class="input-group-append">
+                  <button class="btn btn-dark" type="button" id="search-button">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3 justify-content-center" id="row2">
+            {% for list in data %}
+            <div class="card-md-4">
+                <div class="card bg-dark" style="width: 56rem;" id="mycard">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ list.nama_barang }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{list.merk}} | {{list.kadaluarsa}} </h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Rp.{{list.harga}} </h6>
+                        <p class="card-text">{{list.keterangan}}</p>
+                        <a class="card-link">Kategori : {{list.jenis}}</a>
+                        <a href="#" class="card-link">PESAN</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    </div>   
+</div>
+{% endblock %}

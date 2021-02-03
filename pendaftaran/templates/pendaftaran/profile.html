@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'pendaftaran/css/style.css' %}" type="text/css">
+<!-- <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form action="/signup/" method="post">
+                {% csrf_token %}
+            
+                {{ form.as_p }}
+                <button class="btn btn-primary">Daftar</button>
+            
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+-->
+
+<div class="container" id="containerp">
+    <form action="/signup/" method="post" class="well well-lg" action="" style="-webkit-box-shadow: 0px 0px 30px #788788;" id="mycard"> 
+        {% csrf_token %}
+            
+        {{ form.as_p }}
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button class="btn btn-dark">Daftar</button>
+        </div>
+    </form>
+  </div>
+  
+
+
+
+{% endblock %}

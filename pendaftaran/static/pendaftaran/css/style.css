@@ -1,0 +1,38 @@
+#formup {
+    margin-top: 15px;
+    color: white;
+    background-color: rgb(52, 58, 64);
+}
+
+#mycard {
+    border-radius: 2%;
+    align-content: ;
+    padding:20px;
+    color: white;
+}
+
+#containerp {
+    width:800px;
+    margin:0 auto; 
+    margin-top: 10px;
+    padding:20px;
+    background: rgb(52, 58, 64);
+    overflow: hidden;
+    border-radius: 2%;
+}
+
+.btn {
+    background-color: gray;
+    color: rgb(52, 58, 64);
+    text-transform: uppercase;
+    text-size-adjust: 22px;
+}
+
+#cardlg {
+    background:rgb(52, 58, 64);
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 5%;
+    border-color: white;
+}

@@ -1,0 +1,11 @@
+#mycard {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: cornsilk;
+    margin:0 auto; /* agar container berada di tengah browser*/
+    padding:20px;
+    overflow: hidden;
+}
+
+#row2 {
+    margin-top: 10px;
+}

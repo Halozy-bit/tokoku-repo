@@ -1,0 +1,36 @@
+#logo {
+    height:30px;
+    
+}
+
+#navtext {
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+#btnj {
+    margin-top: 100px;
+}
+
+.jumbotron{
+	background-image:url("/static/image/pexels-artem-beliaikin-1115600.jpg");
+	background-position:center;
+	background-size:cover;
+    height:1200px;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    font-size: 36px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.jumbotron .display-4 {
+    margin-top: 80px;
+    font-size: 72px;
+    text-transform: uppercase;
+}
+
+
+
